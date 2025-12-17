@@ -1,15 +1,70 @@
-# React + TypeScript + Vite
+# 99 Problems
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A showcase of innovative projects built by four college students passionate about becoming better and broader developers.
 
-Currently, two official plugins are available:
+## Mission
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our mission is to become better and broader developers by tackling as many problems as we can come up with in as many different frameworks and languages as we can. We are four college students looking to persevere through weekly challenges together.
 
-## React Compiler
+## Team
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dhilon Prasad** - B.S. Computer Science, University of Colorado Boulder
+- **Dhruv Nemani** - B.S. Computer Science, Purdue University
+- **Nikhil Mathihalli** - B.S. Computer Science, University of California, Berkeley
+- **Varun Sreedhara** - B.S. Computer Science, San Jose State University
+
+## Tech Stack
+
+This project is built with:
+
+- **React** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd 99Problems
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+### Running the Development Server
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (or the port shown in the terminal).
+
+### Other Scripts
+
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+- `src/pages/` - Page components (Home, About)
+- `src/layouts/` - Layout components
+- `src/assets/` - Static assets
+- `public/` - Public assets
 
 ## Expanding the ESLint configuration
 
