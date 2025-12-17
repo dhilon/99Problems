@@ -37,7 +37,8 @@ export function RootLayout() {
       </main>
       <footer className="border-t bg-white">
         <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-600">
-          Built with React Router + Tailwind.
+          Built &copy; {new Date().getFullYear()} by 99 Problems, Inc. |&nbsp;
+          <a href="https://github.com/dhilon/99Problems" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">GitHub</a>
         </div>
       </footer>
     </div>
