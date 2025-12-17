@@ -8,6 +8,8 @@ const profileInfos = [
       github: 'https://github.com/dhilon',
     },
     hobbies: ['Basketball', 'Reading', 'Climbing', 'Chess'],
+    bio: 'Passionate about building innovative solutions and exploring new technologies. Always eager to learn and tackle challenging problems.',
+    projectsWorkedOn: 1,
   },
   {
     name: 'Dhruv Nemani',
@@ -18,6 +20,8 @@ const profileInfos = [
       github: 'https://github.com/Dnemni',
     },
     hobbies: ['Reading', 'Traveling', 'Cooking', 'Squash'],
+    bio: 'Enthusiastic developer with a passion for creating meaningful applications. Love exploring different frameworks and solving complex problems.',
+    projectsWorkedOn: 2,
   },
   {
     name: 'Nikhil Mathihalli',
@@ -28,6 +32,8 @@ const profileInfos = [
       github: 'https://github.com/Nikhilmathihalli',
     },
     hobbies: ['Basketball', 'Reading', 'Climbing', 'Chess'],
+    bio: 'Dedicated to continuous learning and building impactful software. Enjoy working on diverse projects that push technical boundaries.',
+    projectsWorkedOn: 0,
   },
   {
     name: 'Varun Sreedhara',
@@ -38,6 +44,8 @@ const profileInfos = [
       github: 'https://github.com/Neonpancake624',
     },
     hobbies: ['Basketball', 'Reading', 'Climbing', 'Chess'],
+    bio: 'Focused on creating elegant solutions to real-world problems. Passionate about full-stack development and collaborative coding.',
+    projectsWorkedOn: 0,
   },
 ]
 
@@ -51,7 +59,7 @@ export function AboutPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {profileInfos.map((profile, index) => (
           <div
             key={index}
@@ -77,10 +85,30 @@ export function AboutPage() {
               <div className="absolute inset-0 bg-linear-to-t from-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-5">
-              <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                 {profile.name}
               </h3>
+              <div className="text-sm mb-3">
+                <span className="text-slate-600">Projects: </span>
+                <span
+                  className="font-semibold inline-block"
+                  style={{
+                    background: 'linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  {profile.projectsWorkedOn} / 2
+                </span>
+              </div>
               <div className="space-y-3">
+                <div className="mb-3">
+                  <p className="text-sm text-slate-700 leading-relaxed">
+                    {profile.bio}
+                  </p>
+                </div>
+
                 <div className="flex items-start gap-2">
                   <svg
                     className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0"
