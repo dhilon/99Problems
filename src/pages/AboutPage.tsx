@@ -47,7 +47,7 @@ export function AboutPage() {
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">About</h1>
         <p className="max-w-prose text-slate-700">
-          Learn more about the people behind these projects.
+          Our mission is to become better and broader developers by tackling as many problems as we can come up with in as many different frameworks and languages as we can. We are four college students looking to persevere through weekly challenges together.
         </p>
       </div>
 
